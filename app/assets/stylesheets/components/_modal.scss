@@ -1,0 +1,75 @@
+body {
+  margin:0;
+}
+.modal {
+  display:none;
+}
+.modal-content {
+  width: 59rem;
+  min-height: 300px;
+  height: auto;
+  max-height: 90vh;
+  overflow: scroll;
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(240, 240, 240, 0.98);
+  padding: 0.5em;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+}
+.close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.man-info-top {
+  text-align: center;
+}
+.man-info-top h4 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 500;
+}
+.man-info-top p {
+  margin-bottom: 0;
+  font-size: 0.8em;
+}
+.man-info-top a {
+  text-decoration: none;
+}
+.man-info-top a:hover {
+  color: white;
+}
+.info-url {
+  background-color: #cc313b;
+  border-radius: 1rem;
+  color: white;
+  font-size: 0.75em;
+  text-align: center;
+  padding: 0.5em 1em;
+  width: auto;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.man-info-one {
+  background-color: white;
+  margin: 0.3em;
+  border-left: 0.3em solid black;
+  padding: 0.8em 1.2em;
+}
+.man-info-one h4 {
+  font-size: 1em;
+  font-weight: bolder;
+  color: #8f8f8f;
+  font-family: 'Noto Serif KR', serif;
+  margin: 0;
+}
+.man-info-one p {
+  font-size: 0.85em;
+  font-family: 'Noto Serif KR', serif;
+  margin: 0;
+}

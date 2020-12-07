@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  category: MyString
+  year: MyString
+  refer_url: MyString
+  img: MyString
+  past: MyText
+  school_career: MyText
+  main_career: MyText
+  award: MyText
+  back_color: MyString
+
+two:
+  name: MyString
+  category: MyString
+  year: MyString
+  refer_url: MyString
+  img: MyString
+  past: MyText
+  school_career: MyText
+  main_career: MyText
+  award: MyText
+  back_color: MyString

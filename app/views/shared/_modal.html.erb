@@ -1,0 +1,86 @@
+<% @mans.each do |man| %>
+
+  <div class="man">
+    <img src=<%= man.img %> alt="man_picture" class="avatar img-click" id="img-click-<%= man.id %>">
+    <p class="bold-text"><%= man.name %></p>
+    <p class="small-text"><%= man.category %></p>
+  </div>
+
+  <div class="modal" data-man-id="<%= man.id %>">
+
+    <div class="modal-content">
+      <img src="http://pages.newstapa.org/n1905/static/img/close.png" alt="X" class="close">
+      <div class="man-info-top">
+        <img src=<%= man.img %> alt="man_picture" class="avatar-big" id="man">
+        <h4><%= man.name %></h4>
+        <p><%= man.category %></p>
+        <p class=“="mb-2"><%= man.year %></p>
+        <% if man.refer_url.nil? %>
+        <% else %>
+          <a href="<%= man.refer_url %>" class="info-url" target="_blank">친일반민족규명위 결정보고서 보기</a>
+        <% end %>
+      </div>
+
+      <div class="man-info-one mt-3">
+        <h4>친일 행적</h4>
+        <% if man.past.nil? %>
+        <% else %>
+          <% if man.past.include?(':') %>
+            <% man_array = man.past.split(':') %>
+            <% for e in 0...man_array.count %>
+              <p><%= man.past.split(':')[e] %></p>
+            <% end %>
+          <% else %>
+            <p><%= man.past %></p>
+          <% end %>
+        <% end %>
+      </div>
+
+      <% if man.school_career.nil? %>
+      <% else %>
+      <div class="man-info-one">
+        <h4>해방 후 사학 경력</h4>
+        <% if man.school_career.include?(':') %>
+          <% man_array = man.school_career.split(':') %>
+          <% for e in 0...man_array.count %>
+            <p><%= man.school_career.split(':')[e] %></p>
+          <% end %>
+        <% else %>
+          <p><%= man.school_career %></p>
+        <% end %>
+      </div>
+      <% end %>
+
+      <% if man.main_career.nil? %>
+      <% else %>
+        <div class="man-info-one">
+          <h4>해방 후 주요 경력</h4>
+          <% if man.main_career.include?(':') %>
+            <% man_array = man.main_career.split(':') %>
+            <% for e in 0...man_array.count %>
+              <p><%= man.main_career.split(':')[e] %></p>
+            <% end %>
+          <% else %>
+            <p><%= man.main_career %></p>
+          <% end %>
+        </div>
+      <% end %>
+
+      <% if man.award.nil? %>
+      <% else %>
+        <div class="man-info-one">
+          <h4>훈장 수여 내역</h4>
+          <% if man.award.include?(':') %>
+            <% man_array = man.award.split(':') %>
+            <% for e in 0...man_array.count %>
+              <p><%= man.award.split(':')[e] %></p>
+            <% end %>
+          <% else %>
+            <p><%= man.award %></p>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+<% end %>
