@@ -33,10 +33,12 @@ body {
 .man-info-top h4 {
   font-family: 'Noto Serif KR', serif;
   font-weight: 500;
+  font-size: 2em;
+  margin: 0;
 }
 .man-info-top p {
-  margin-bottom: 0;
-  font-size: 0.8em;
+  margin: 0.2em;
+  font-size: 0.9em;
 }
 .man-info-top a {
   text-decoration: none;
@@ -57,19 +59,20 @@ body {
 }
 .man-info-one {
   background-color: white;
-  margin: 0.3em;
+  margin: 0.5em;
   border-left: 0.3em solid black;
-  padding: 0.8em 1.2em;
+  padding: 0.7em 1.2em;
 }
 .man-info-one h4 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bolder;
   color: #8f8f8f;
   font-family: 'Noto Serif KR', serif;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0.2em;
 }
 .man-info-one p {
-  font-size: 0.85em;
+  font-size: 1em;
   font-family: 'Noto Serif KR', serif;
   margin: 0;
 }
