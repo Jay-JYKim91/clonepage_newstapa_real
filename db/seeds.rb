@@ -330,18 +330,18 @@ man28 = Man.create(
         back_color: "red"
       )
 
-man29 = Man.create(
-        name: "노기남",
-        category: "종교",
-        year: "1902-1984",
-        refer_url: "https://drive.google.com/file/d/1EdCGQs6DAn0iNn4Xn0Nj0ctIl4w6GX0I/view",
-        img: "노기남.png",
-        past: "조선전시종교보국회 이사:내선일체 황군필승 결의",
-        school_career: "인천 박문여자중학교 설립:명지학원(명지대) 2대 이사장",
-        main_career: "대주교",
-        award: "국민훈장모란장",
-        back_color: "pink"
-      )
+# man29 = Man.create(
+#         name: "노기남",
+#         category: "종교",
+#         year: "1902-1984",
+#         refer_url: "https://drive.google.com/file/d/1EdCGQs6DAn0iNn4Xn0Nj0ctIl4w6GX0I/view",
+#         img: "노기남.png",
+#         past: "조선전시종교보국회 이사:내선일체 황군필승 결의",
+#         school_career: "인천 박문여자중학교 설립:명지학원(명지대) 2대 이사장",
+#         main_career: "대주교",
+#         award: "국민훈장모란장",
+#         back_color: "pink"
+#       )
 
 man30 = Man.create(
         name: "노영빈",
