@@ -1,4 +1,5 @@
 @import "config/fonts";
+@import "config/size";
 
 @import "components/footer";
 @import "components/navbar";
@@ -6,3 +7,32 @@
 @import "components/avatar";
 
 @import "pages/index";
+
+@include mobile {
+  .box {
+    width: 25rem;
+    margin: 0;
+  }
+  .modal-content {
+    width: 25rem;
+  }
+}
+
+@include tablet {
+  .box {
+    width: 100%;
+    margin: 0;
+  }
+  .modal-content {
+    width: 40rem;
+  }
+}
+
+@include desktop {
+  .box {
+    // width: 52rem;
+  }
+  .modal-content {
+    // width: 52rem;
+  }
+}
