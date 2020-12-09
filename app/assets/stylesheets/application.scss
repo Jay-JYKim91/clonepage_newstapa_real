@@ -10,21 +10,58 @@
 
 @include mobile {
   .box {
-    width: 25rem;
+    width: auto;
     margin: 0;
   }
   .modal-content {
-    width: 25rem;
+    width: 30em;
+    margin: 0;
+  }
+  .title {
+    font-size: 1.3em;
+  }
+  .content {
+    font-size: 0.8em;
+  }
+  .avatar {
+    width: 2.5em;
+  }
+  .bold-text {
+    font-size: 0.8em;
+  }
+  .small-text {
+    font-size: 0.6em;
+  }
+  .man {
+    margin: 5px 8px;
+  }
+  .man-info-top h4 {
+    font-size: 1.5em;
+  }
+  .man-info-top p {
+    font-size: 0.7em;
+  }
+  .man-info-one h4 {
+    font-size: 1em;
+  }
+  .man-info-one p {
+    font-size: 0.7em;
+  }
+  .footer {
+    padding: 0 1em;
+  }
+  .text-footer {
+    font-size: 0.8em;
   }
 }
 
 @include tablet {
   .box {
-    width: 100%;
+    width: auto;
     margin: 0;
   }
-  .modal-content {
-    width: 40rem;
+  .footer {
+    padding: 0 5em;
   }
 }
 
